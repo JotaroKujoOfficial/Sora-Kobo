@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "rTWzmHu6z_-E5cXoMTPLj"
+uri = "file://SoraKobo_Unity_Project.zip"
+type = "unspecified"
+title = "Sora Kobo — Полный Unity проект (85 KB)"

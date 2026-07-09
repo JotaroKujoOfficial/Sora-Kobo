@@ -1,0 +1,22 @@
+{
+    "name": "SoraKobo.Player",
+    "rootNamespace": "SoraKobo.Player",
+    "references": [
+        "Mirror",
+        "kcp2k",
+        "SoraKobo.Data",
+        "SoraKobo.Audio",
+        "SoraKobo.Interaction",
+        "SoraKobo.Camera",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

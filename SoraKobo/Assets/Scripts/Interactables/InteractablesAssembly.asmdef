@@ -1,0 +1,20 @@
+{
+    "name": "SoraKobo.Interactables",
+    "rootNamespace": "SoraKobo.Interactables",
+    "references": [
+        "Mirror",
+        "kcp2k",
+        "SoraKobo.Interaction",
+        "SoraKobo.Audio",
+        "SoraKobo.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

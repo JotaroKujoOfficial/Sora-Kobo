@@ -1,0 +1,21 @@
+{
+    "name": "SoraKobo.Multiplayer",
+    "rootNamespace": "SoraKobo.Multiplayer",
+    "references": [
+        "Mirror",
+        "kcp2k",
+        "SoraKobo.Data",
+        "SoraKobo.Player",
+        "SoraKobo.Building",
+        "SoraKobo.Interaction"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
