@@ -94,6 +94,13 @@ namespace SoraKobo.Multiplayer
 
         // ── Client Callbacks ──────────────────────────────────────────────
 
+        public override void OnStartClient()
+        {
+            base.OnStartClient();
+            // Register client-side message handlers once per session
+            NetworkMessages.Handlers.RegisterClient();
+        }
+
         public override void OnClientConnect()
         {
             base.OnClientConnect();

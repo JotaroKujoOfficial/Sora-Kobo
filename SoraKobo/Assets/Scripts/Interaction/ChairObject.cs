@@ -31,7 +31,7 @@ namespace SoraKobo.Interaction
             {
                 CmdSit(player.netId);
                 player.transform.position = sitAnchor.position;
-                player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+                player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 player.enabled = false;
             }
         }

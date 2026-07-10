@@ -70,7 +70,7 @@ namespace SoraKobo.Interaction
         {
             if (_driver == null || !_driver.isLocalPlayer || _rb == null) return;
             float h = _joystick != null ? _joystick.Horizontal : Input.GetAxisRaw("Horizontal");
-            _rb.linearVelocity = new Vector2(h * vehicleSpeed, _rb.linearVelocity.y);
+            _rb.velocity = new Vector2(h * vehicleSpeed, _rb.velocity.y);
             if (h > 0.01f) transform.localScale = new Vector3(1, 1, 1);
             else if (h < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
         }

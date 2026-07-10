@@ -91,7 +91,7 @@ namespace SoraKobo.Player
         void FixedUpdate()
         {
             if (!isLocalPlayer) return;
-            if (_inBuildMode) { _rb.linearVelocity = Vector2.zero; return; }
+            if (_inBuildMode) { _rb.velocity = Vector2.zero; return; }
             Move();
         }
 
@@ -103,7 +103,7 @@ namespace SoraKobo.Player
             else if (h < -0.01f && _facingRight) Flip();
         }
 
-        void Move() => _rb.linearVelocity = new Vector2(_moveInput.x * moveSpeed, _rb.linearVelocity.y);
+        void Move() => _rb.velocity = new Vector2(_moveInput.x * moveSpeed, _rb.velocity.y);
 
         public void Jump()
         {
@@ -149,7 +149,7 @@ namespace SoraKobo.Player
         public void SetBuildMode(bool active)
         {
             _inBuildMode = active;
-            if (active) _rb.linearVelocity = Vector2.zero;
+            if (active) _rb.velocity = Vector2.zero;
         }
 
         [Command]

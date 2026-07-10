@@ -46,8 +46,9 @@ namespace SoraKobo.Multiplayer.NetworkMessages
         {
             if (string.IsNullOrEmpty(msg.json)) return;
             var building = Object.FindObjectOfType<Building.BuildingSystem>();
+            // Call the client-safe method — ServerLoadMap is [Server]-only
             if (building != null && NetworkClient.active && !NetworkServer.active)
-                building.ServerLoadMap(msg.json);
+                building.ClientReceiveMap(msg.json);
         }
     }
 }

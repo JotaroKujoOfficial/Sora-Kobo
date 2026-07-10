@@ -156,7 +156,18 @@ namespace SoraKobo.Building
                 NetworkServer.Destroy(identity.gameObject);
         }
 
-        // ── Map load/save (server authority) ─────────────────────────────
+        // ── Map load/save ─────────────────────────────────────────────────
+
+        /// <summary>Called on clients when they receive the map from the server.</summary>
+        public void ClientReceiveMap(string json)
+        {
+            // Replaying the block list client-side: clear local ghost grid only
+            // (server has authority; we just visualise what the server already spawned)
+            Debug.Log("[SoraKobo] Client received map data, length=" + json.Length);
+            // Nothing extra needed: server spawns blocks via NetworkServer.Spawn
+            // which auto-propagates to all clients. This method is a hook for
+            // future client-only visual effects (fade-in, etc.)
+        }
 
         [Server]
         public void ServerLoadMap(string json)

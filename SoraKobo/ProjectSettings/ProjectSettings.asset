@@ -438,7 +438,7 @@ PlayerSettings:
   androidGamepadSupportLevel: 0
   androidSupportedAspectRatio: 1
   chromeosInputEmulation: 1
-  androidTargetArchitectures: 1
+  androidTargetArchitectures: 3
   androidSplashScreenScale: 0
   androidKeystoreFullPath:
   keystoreType: 0

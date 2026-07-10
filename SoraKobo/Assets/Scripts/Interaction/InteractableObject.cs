@@ -55,7 +55,8 @@ namespace SoraKobo.Interaction
             {
                 CmdSetOccupied(true, player.netId);
                 if (sitPoint != null) player.transform.position = sitPoint.position;
-                player.GetComponent<Rigidbody2D>()?.linearVelocity.Equals(Vector2.zero);
+                var rb2d = player.GetComponent<Rigidbody2D>();
+                if (rb2d != null) rb2d.velocity = Vector2.zero;
                 _currentPlayer = player;
             }
         }
