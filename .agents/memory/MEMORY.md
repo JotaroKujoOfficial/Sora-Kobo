@@ -1,0 +1,3 @@
+- [Mirror UPM install](mirror-upm.md) — correct package: com.mirrornetworking.mirror v89.8.0 via OpenUPM (NOT git URL, NOT com.mirror-networking.mirror)
+- [Unity 2022.3 vs Unity 6 API](unity-2022-api.md) — linearVelocity is Unity 6 only; use velocity in 2022.3
+- [Mirror Command pattern](mirror-command-pattern.md) — Commands are client→server only; server code must call server methods directly, never CmdXxx
