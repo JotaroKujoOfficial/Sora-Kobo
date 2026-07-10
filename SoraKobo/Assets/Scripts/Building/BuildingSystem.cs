@@ -137,6 +137,16 @@ namespace SoraKobo.Building
 
         // ── Server-only internal block operations ─────────────────────────
 
+        /// <summary>Public server-only entry point for use by WorldGenerator and ServerLoadMap.</summary>
+        [Server]
+        public void ServerPlaceBlockPublic(string blockId, Vector2Int pos, int layer)
+        {
+            if (!IsValidGridPos(pos)) return;
+            if (_grid[layer].ContainsKey(pos)) return;
+            if (!IsValidBlockId(blockId)) return;
+            ServerPlaceBlock(blockId, pos, layer);
+        }
+
         [Server]
         private void ServerPlaceBlock(string blockId, Vector2Int pos, int layer)
         {

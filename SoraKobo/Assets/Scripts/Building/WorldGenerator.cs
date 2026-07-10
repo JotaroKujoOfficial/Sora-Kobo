@@ -23,6 +23,10 @@ namespace SoraKobo.Building
 
         void Start() => _building = BuildingSystem.Instance;
 
+        /// <summary>
+        /// Server-only world generation. Must only be called from server code.
+        /// Uses ServerPlaceBlock directly — NOT CmdPlaceBlock (Commands are client→server only).
+        /// </summary>
         [Server]
         public void Generate()
         {
@@ -36,34 +40,34 @@ namespace SoraKobo.Building
 
                 // Sky background
                 for (int y = surfaceY + 1; y < 35; y++)
-                    _building.CmdPlaceBlock("sky", new Vector2Int(x, y), 0);
+                    _building.ServerPlaceBlockPublic("sky", new Vector2Int(x, y), 0);
 
                 // Ground surface
-                _building.CmdPlaceBlock("grass", new Vector2Int(x, surfaceY), 1);
+                _building.ServerPlaceBlockPublic("grass", new Vector2Int(x, surfaceY), 1);
 
                 // Dirt below
                 for (int y = surfaceY - 1; y >= Mathf.Max(0, surfaceY - dirtDepth); y--)
-                    _building.CmdPlaceBlock("dirt", new Vector2Int(x, y), 1);
+                    _building.ServerPlaceBlockPublic("dirt", new Vector2Int(x, y), 1);
 
                 // Stone deeper
                 for (int y = surfaceY - dirtDepth - 1; y >= 0; y--)
-                    _building.CmdPlaceBlock("stone", new Vector2Int(x, y), 1);
+                    _building.ServerPlaceBlockPublic("stone", new Vector2Int(x, y), 1);
 
                 // Trees
                 if (x % treeSpacing == 0 && x > 0 && x < width - treeSpacing)
                 {
                     int h = Random.Range(treeMinHeight, treeMaxHeight + 1);
                     for (int ty = surfaceY + 1; ty <= surfaceY + h; ty++)
-                        _building.CmdPlaceBlock("wood", new Vector2Int(x, ty), 1);
+                        _building.ServerPlaceBlockPublic("wood", new Vector2Int(x, ty), 1);
                     // Leaf crown
                     for (int lx = x - 2; lx <= x + 2; lx++)
                         for (int ly = surfaceY + h; ly <= surfaceY + h + 2; ly++)
-                            _building.CmdPlaceBlock("leaf", new Vector2Int(lx, ly), 1);
+                            _building.ServerPlaceBlockPublic("leaf", new Vector2Int(lx, ly), 1);
                 }
 
                 // Flowers occasionally
                 if (Random.value < 0.1f)
-                    _building.CmdPlaceBlock("flower", new Vector2Int(x, surfaceY + 1), 2);
+                    _building.ServerPlaceBlockPublic("flower", new Vector2Int(x, surfaceY + 1), 2);
             }
 
             // Add clouds
@@ -72,10 +76,10 @@ namespace SoraKobo.Building
                 int cx = Random.Range(5, width - 5);
                 int cy = Random.Range(22, 30);
                 for (int dx = -2; dx <= 2; dx++)
-                    _building.CmdPlaceBlock("cloud", new Vector2Int(cx + dx, cy), 2);
-                _building.CmdPlaceBlock("cloud", new Vector2Int(cx - 1, cy + 1), 2);
-                _building.CmdPlaceBlock("cloud", new Vector2Int(cx,     cy + 1), 2);
-                _building.CmdPlaceBlock("cloud", new Vector2Int(cx + 1, cy + 1), 2);
+                    _building.ServerPlaceBlockPublic("cloud", new Vector2Int(cx + dx, cy), 2);
+                _building.ServerPlaceBlockPublic("cloud", new Vector2Int(cx - 1, cy + 1), 2);
+                _building.ServerPlaceBlockPublic("cloud", new Vector2Int(cx,     cy + 1), 2);
+                _building.ServerPlaceBlockPublic("cloud", new Vector2Int(cx + 1, cy + 1), 2);
             }
         }
     }

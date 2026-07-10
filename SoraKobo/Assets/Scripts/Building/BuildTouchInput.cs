@@ -19,7 +19,9 @@ namespace SoraKobo.Building
 
         void TryBuild(Vector2 screenPos)
         {
-            if (_system == null || !_system.isLocalPlayer) return;
+            // BuildingSystem is a scene NetworkBehaviour; isLocalPlayer is always false.
+            // Guard instead on NetworkClient.active so touch input only fires on clients.
+            if (_system == null || !Mirror.NetworkClient.active) return;
             _system.OnTapBuild(screenPos);
             Audio.AudioManager.Instance?.PlayBlockPlace();
         }
