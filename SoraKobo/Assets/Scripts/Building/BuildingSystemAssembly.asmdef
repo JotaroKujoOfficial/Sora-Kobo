@@ -1,10 +1,10 @@
 {
   "name": "SoraKobo.Building",
-  "rootNamespace": "SoraKobo.Building",
   "references": [
     "Mirror",
     "kcp2k",
-    "Unity.TextMeshPro"
+    "Unity.TextMeshPro",
+    "SoraKobo.Data"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
