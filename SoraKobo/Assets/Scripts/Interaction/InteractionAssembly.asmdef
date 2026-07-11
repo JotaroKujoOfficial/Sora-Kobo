@@ -1,20 +1,21 @@
 {
-    "name": "SoraKobo.Interaction",
-    "rootNamespace": "SoraKobo.Interaction",
-    "references": [
-        "Mirror",
-        "kcp2k",
-        "SoraKobo.Data",
-        "SoraKobo.Audio",
-        "Unity.TextMeshPro"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "SoraKobo.Interaction",
+  "rootNamespace": "SoraKobo.Interaction",
+  "references": [
+    "Mirror",
+    "kcp2k",
+    "SoraKobo.Data",
+    "SoraKobo.Audio",
+    "Unity.TextMeshPro",
+    "SoraKobo.Player"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }
