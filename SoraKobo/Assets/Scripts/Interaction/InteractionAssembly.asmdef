@@ -1,10 +1,11 @@
 {
   "name": "SoraKobo.Interaction",
-  "rootNamespace": "SoraKobo.Interaction",
   "references": [
     "Mirror",
     "kcp2k",
-    "Unity.TextMeshPro"
+    "Unity.TextMeshPro",
+    "SoraKobo.Data",
+    "SoraKobo.Player"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
