@@ -3,11 +3,7 @@
     "rootNamespace": "SoraKobo.Multiplayer",
     "references": [
         "Mirror",
-        "kcp2k",
-        "SoraKobo.Data",
-        "SoraKobo.Player",
-        "SoraKobo.Building",
-        "SoraKobo.Interaction"
+        "kcp2k"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
