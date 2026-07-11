@@ -1,18 +1,22 @@
 {
-    "name": "SoraKobo.UI",
-    "rootNamespace": "SoraKobo.UI",
-    "references": [
-        "Mirror",
-        "kcp2k",
-        "Unity.TextMeshPro"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "SoraKobo.UI",
+  "references": [
+    "Mirror",
+    "kcp2k",
+    "Unity.TextMeshPro",
+    "SoraKobo.Data",
+    "SoraKobo.Player",
+    "SoraKobo.Building",
+    "SoraKobo.MapEditor",
+    "SoraKobo.Interaction"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }
