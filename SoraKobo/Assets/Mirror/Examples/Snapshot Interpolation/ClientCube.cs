@@ -163,7 +163,7 @@ namespace Mirror.Examples.SnapshotInterpolationDemo
             // catchup is displayed as color state in Update() already.
             const int width = 30; // fit 3 digits
             const int height = 20;
-            Vector2 screen = UnityEngine.Camera.main.WorldToScreenPoint(transform.position);
+            Vector2 screen = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main.WorldToScreenPoint(transform.position);
             string str = $"{snapshots.Count}";
             GUI.Label(new Rect(screen.x - width / 2, screen.y - height / 2, width, height), str);
 

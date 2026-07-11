@@ -16,7 +16,7 @@ namespace Mirror.Examples.Common
 
         void Awake()
         {
-            mainCam = UnityEngine.Camera.main;
+            mainCam = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
         }
 
         public override void OnStartLocalPlayer()

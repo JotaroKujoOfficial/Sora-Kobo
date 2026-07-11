@@ -16,7 +16,7 @@ namespace Mirror.Examples.PredictionBenchmark
             if (Input.GetMouseButtonDown(0))
             {
                 // raycast into camera direction
-                Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
                     // we may have hit the ghost object.

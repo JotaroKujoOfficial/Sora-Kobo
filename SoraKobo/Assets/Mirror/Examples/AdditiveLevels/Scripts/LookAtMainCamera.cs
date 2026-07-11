@@ -15,7 +15,7 @@ namespace Mirror.Examples.AdditiveLevels
         [ClientCallback]
         void LateUpdate()
         {
-            transform.forward = UnityEngine.Camera.main.transform.forward;
+            transform.forward = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main.transform.forward;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Mirror.Examples.Common
         // LateUpdate so that all camera updates are finished.
         void LateUpdate()
         {
-            transform.forward = UnityEngine.Camera.main.transform.forward;
+            transform.forward = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main.transform.forward;
         }
     }
 }
