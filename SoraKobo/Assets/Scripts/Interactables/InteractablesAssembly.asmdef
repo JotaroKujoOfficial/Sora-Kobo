@@ -3,10 +3,7 @@
     "rootNamespace": "SoraKobo.Interactables",
     "references": [
         "Mirror",
-        "kcp2k",
-        "SoraKobo.Interaction",
-        "SoraKobo.Audio",
-        "SoraKobo.UI"
+        "kcp2k"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
