@@ -7,7 +7,8 @@
     "SoraKobo.Data",
     "SoraKobo.Audio",
     "Unity.TextMeshPro",
-    "SoraKobo.Player"
+    "SoraKobo.Player",
+    "SoraKobo.UI"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
