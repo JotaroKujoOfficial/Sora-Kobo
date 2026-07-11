@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using SoraKobo.Data;
+using SoraKobo.MapEditor;
 
 namespace SoraKobo.Building
 {
