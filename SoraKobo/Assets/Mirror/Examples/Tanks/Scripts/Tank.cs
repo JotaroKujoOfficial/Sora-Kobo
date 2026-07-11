@@ -94,7 +94,7 @@ namespace Mirror.Examples.Tanks
 
         void RotateTurret()
         {
-            Ray ray = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, 100))
             {
                 Debug.DrawLine(ray.origin, hit.point);

@@ -17,7 +17,7 @@ namespace Mirror.Examples.Billiards
         // cast mouse position on screen to world position
         bool MouseToWorld(out Vector3 position)
         {
-            Ray ray = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
             Plane plane = new Plane(Vector3.up, transform.position);
             if (plane.Raycast(ray, out float distance))
             {

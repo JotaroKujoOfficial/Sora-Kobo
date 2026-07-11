@@ -41,7 +41,7 @@ namespace Mirror.Examples.TopDownShooter
         public override void OnStartLocalPlayer()
         {
             // Grab and setup camera for local player only
-            mainCamera = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+            mainCamera = UnityEngine.Camera.main;
             cameraTopDown = mainCamera.GetComponent<CameraTopDown>();
             cameraTopDown.playerTransform = this.transform;
             cameraTopDown.offset.y = 20.0f; // dramatic zoom out once players setup

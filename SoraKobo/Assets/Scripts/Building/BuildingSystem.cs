@@ -41,7 +41,7 @@ namespace SoraKobo.Building
 
         void Start()
         {
-            _cam = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+            _cam = UnityEngine.Camera.main;
             CreateGhost();
         }
 

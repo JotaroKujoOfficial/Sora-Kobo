@@ -31,7 +31,7 @@ namespace SoraKobo.UI
         void Start()
         {
             _editor = MapEditor.MapEditorController.Instance;
-            _cam    = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+            _cam    = UnityEngine.Camera.main;
 
             buildBtn?.onClick.AddListener(OnBuild);
             eraseBtn?.onClick.AddListener(OnErase);

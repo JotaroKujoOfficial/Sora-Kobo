@@ -19,7 +19,7 @@ namespace Mirror.Examples.Hex2D
 
         void Awake()
         {
-            mainCam = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+            mainCam = UnityEngine.Camera.main;
 #if UNITY_2022_2_OR_NEWER
             checkMethod = FindAnyObjectByType<HexSpatialHash2DInterestManagement>().checkMethod;
 #else
