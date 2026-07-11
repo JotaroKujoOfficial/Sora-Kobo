@@ -1,17 +1,20 @@
 {
-    "name": "SoraKobo.Interactables",
-    "rootNamespace": "SoraKobo.Interactables",
-    "references": [
-        "Mirror",
-        "kcp2k"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "SoraKobo.Interactables",
+  "references": [
+    "Mirror",
+    "kcp2k",
+    "Unity.TextMeshPro",
+    "SoraKobo.Data",
+    "SoraKobo.Interaction",
+    "SoraKobo.Player"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }
