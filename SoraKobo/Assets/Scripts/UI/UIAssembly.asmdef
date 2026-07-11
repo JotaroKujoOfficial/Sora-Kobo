@@ -4,11 +4,6 @@
     "references": [
         "Mirror",
         "kcp2k",
-        "SoraKobo.Data",
-        "SoraKobo.Audio",
-        "SoraKobo.Player",
-        "SoraKobo.Building",
-        "SoraKobo.Multiplayer",
         "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
