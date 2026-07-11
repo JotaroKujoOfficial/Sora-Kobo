@@ -4,8 +4,7 @@
     "Mirror",
     "kcp2k",
     "Unity.TextMeshPro",
-    "SoraKobo.Data",
-    "SoraKobo.UI"
+    "SoraKobo.Data"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
