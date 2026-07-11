@@ -68,10 +68,10 @@ namespace SoraKobo.Player
                     new Color(1f, 0.85f, 0.7f), Color.blue);
             }
 
-            var cam = Camera.main;
+            var cam = UnityEngine.Camera.main;
             if (cam != null)
             {
-                var follow = cam.GetComponent<SoraKobo.Camera.CameraFollow>();
+                var follow = cam.GetComponent<SoraKobo.UnityEngine.Camera.CameraFollow>();
                 if (follow != null) follow.SetTarget(transform);
             }
 

@@ -92,7 +92,7 @@ namespace Mirror.Examples.BenchmarkIdle
             // disable rendering on server to reduce noise in profiling.
             // keep enabled in host mode though.
             if (mode == NetworkManagerMode.ServerOnly)
-                Camera.main.enabled = false;
+                UnityEngine.Camera.main.enabled = false;
         }
     }
 }

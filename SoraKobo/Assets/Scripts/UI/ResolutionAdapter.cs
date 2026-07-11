@@ -5,7 +5,7 @@ namespace SoraKobo.UI
     /// <summary>
     /// Adapts camera orthographic size to maintain a consistent world view
     /// regardless of screen resolution or aspect ratio.
-    /// Attach to the Main Camera.
+    /// Attach to the Main UnityEngine.Camera.
     /// </summary>
     [RequireComponent(typeof(UnityEngine.Camera))]
     public class ResolutionAdapter : MonoBehaviour

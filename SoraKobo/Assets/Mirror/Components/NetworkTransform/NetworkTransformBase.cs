@@ -492,7 +492,7 @@ namespace Mirror
         protected virtual void OnGUI()
         {
             if (!showOverlay) return;
-            if (!Camera.main) return;
+            if (!UnityEngine.Camera.main) return;
 
             // show data next to player for easier debugging. this is very useful!
             // IMPORTANT: this is basically an ESP hack for shooter games.
@@ -500,7 +500,7 @@ namespace Mirror
             if (!Debug.isDebugBuild) return;
 
             // project position to screen
-            Vector3 point = Camera.main.WorldToScreenPoint(target.position);
+            Vector3 point = UnityEngine.Camera.main.WorldToScreenPoint(target.position);
 
             // enough alpha, in front of camera and in screen?
             if (point.z >= 0 && Utils.IsPointInScreen(point))

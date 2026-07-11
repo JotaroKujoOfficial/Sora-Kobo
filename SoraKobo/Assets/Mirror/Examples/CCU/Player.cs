@@ -30,14 +30,14 @@ namespace Mirror.Examples.CCU
             start = tf.position;
 
             // make camera follow
-            Camera.main.transform.SetParent(transform, false);
-            Camera.main.transform.localPosition = cameraOffset;
+            UnityEngine.Camera.main.transform.SetParent(transform, false);
+            UnityEngine.Camera.main.transform.localPosition = cameraOffset;
         }
 
         public override void OnStopLocalPlayer()
         {
             // free the camera so we don't destroy it too
-            Camera.main.transform.SetParent(null, true);
+            UnityEngine.Camera.main.transform.SetParent(null, true);
         }
 
         void AutoMove()

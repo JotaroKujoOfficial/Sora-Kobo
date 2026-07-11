@@ -15,7 +15,7 @@ namespace SoraKobo.Building
 
         private Camera _cam;
 
-        void Start() => _cam = Camera.main;
+        void Start() => _cam = UnityEngine.Camera.main;
 
         public void PlaceFurnitureAt(Vector2 screenPos)
         {
