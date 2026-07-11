@@ -3,9 +3,7 @@
   "references": [
     "Mirror",
     "kcp2k",
-    "Unity.TextMeshPro",
-    "SoraKobo.Data",
-    "SoraKobo.Player"
+    "Unity.TextMeshPro"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
