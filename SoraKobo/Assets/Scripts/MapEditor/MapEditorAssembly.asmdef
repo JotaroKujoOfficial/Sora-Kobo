@@ -1,18 +1,19 @@
 {
-    "name": "SoraKobo.MapEditor",
-    "rootNamespace": "SoraKobo.MapEditor",
-    "references": [
-        "Mirror",
-        "kcp2k",
-        "Unity.TextMeshPro"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "SoraKobo.MapEditor",
+  "references": [
+    "Mirror",
+    "kcp2k",
+    "Unity.TextMeshPro",
+    "SoraKobo.Data",
+    "SoraKobo.Building"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }
