@@ -4,10 +4,7 @@
   "references": [
     "Mirror",
     "kcp2k",
-    "SoraKobo.Data",
-    "SoraKobo.Audio",
-    "Unity.TextMeshPro",
-    "SoraKobo.MapEditor"
+    "Unity.TextMeshPro"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
