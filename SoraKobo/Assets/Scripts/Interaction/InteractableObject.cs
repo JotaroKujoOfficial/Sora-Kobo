@@ -1,6 +1,7 @@
 using UnityEngine;
 using Mirror;
 using UnityEngine.Events;
+using SoraKobo.Player;
 
 namespace SoraKobo.Interaction
 {
