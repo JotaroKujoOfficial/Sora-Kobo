@@ -500,7 +500,7 @@ namespace Mirror
             if (!Debug.isDebugBuild) return;
 
             // project position to screen
-            Vector3 point = UnityEngine.Camera.WorldToScreenPoint(target.position);
+            Vector3 point = UnityEngine.Camera.main.WorldToScreenPoint(target.position);
 
             // enough alpha, in front of camera and in screen?
             if (point.z >= 0 && Utils.IsPointInScreen(point))
