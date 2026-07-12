@@ -26,12 +26,12 @@ namespace SoraKobo.UI
         private MapEditor.MapEditorController _editor;
         private bool _eraseMode = false;
         private int _selectedLayer = 1;
-        private Camera _cam;
+        private UnityEngine.Camera _cam;
 
         void Start()
         {
             _editor = MapEditor.MapEditorController.Instance;
-            _cam    = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+            _cam    = UnityEngine.UnityEngine.Camera.main;
 
             buildBtn?.onClick.AddListener(OnBuild);
             eraseBtn?.onClick.AddListener(OnErase);

@@ -5,13 +5,13 @@ namespace SoraKobo.UI
 {
     /// <summary>
     /// Simple minimap — renders a RenderTexture view of the world.
-    /// Place a secondary Camera above the scene, set its CullingMask and
+    /// Place a secondary UnityEngine.Camera above the scene, set its CullingMask and
     /// Target Texture to a RenderTexture, then assign it here.
     /// </summary>
     public class MiniMap : MonoBehaviour
     {
-        [Header("Mini Map Camera")]
-        public Camera miniMapCamera;
+        [Header("Mini Map UnityEngine.Camera")]
+        public UnityEngine.Camera miniMapCamera;
         public float cameraHeight = 30f;
         public RawImage displayImage;
 

@@ -5,9 +5,9 @@ namespace SoraKobo.UI
     /// <summary>
     /// Adapts camera orthographic size to maintain a consistent world view
     /// regardless of screen resolution or aspect ratio.
-    /// Attach to the Main UnityEngine.UnityEngine.UnityEngine.Camera.
+    /// Attach to the Main UnityEngine.UnityEngine.Camera.
     /// </summary>
-    [RequireComponent(typeof(UnityEngine.Camera))]
+    [RequireComponent(typeof(UnityEngine.UnityEngine.Camera))]
     public class ResolutionAdapter : MonoBehaviour
     {
         [Header("Reference Resolution")]
@@ -17,14 +17,14 @@ namespace SoraKobo.UI
         [Header("Safe Area")]
         public RectTransform safeAreaPanel;
 
-        private UnityEngine.Camera _cam;
+        private UnityEngine.UnityEngine.Camera _cam;
         private Rect _lastSafeArea = Rect.zero;
         private int _lastScreenWidth;
         private int _lastScreenHeight;
 
         void Awake()
         {
-            _cam = GetComponent<UnityEngine.Camera>();
+            _cam = GetComponent<UnityEngine.UnityEngine.Camera>();
             Refresh();
         }
 

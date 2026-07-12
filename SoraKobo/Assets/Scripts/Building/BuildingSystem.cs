@@ -28,7 +28,7 @@ namespace SoraKobo.Building
         private string _selectedBlockId = "grass";
         private int  _selectedLayer    = 1;
         private bool _eraseMode;
-        private Camera _cam;
+        private UnityEngine.UnityEngine.Camera _cam;
 
         // ── Lifecycle ─────────────────────────────────────────────────────
 
@@ -41,7 +41,7 @@ namespace SoraKobo.Building
 
         void Start()
         {
-            _cam = UnityEngine.Camera.main;
+            _cam = UnityEngine.UnityEngine.UnityEngine.Camera.main;
             CreateGhost();
         }
 

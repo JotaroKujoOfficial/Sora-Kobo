@@ -13,7 +13,7 @@ namespace SoraKobo.UI
         public RectTransform handle;
 
         private Canvas _canvas;
-        private Camera _cam;
+        private UnityEngine.Camera _cam;
         private RectTransform _rect;
         private Vector2 _input;
         private Vector2 _bgOrigPos;

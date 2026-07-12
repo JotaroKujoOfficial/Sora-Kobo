@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SoraKobo.Camera
+namespace SoraKobo.UnityEngine.Camera
 {
     public class CameraFollow : MonoBehaviour
     {
@@ -18,11 +18,11 @@ namespace SoraKobo.Camera
         public float minY = -5f;
         public float maxY = 60f;
 
-        private UnityEngine.Camera _cam;
+        private UnityEngine.UnityEngine.Camera _cam;
 
         void Start()
         {
-            _cam = GetComponent<UnityEngine.Camera>();
+            _cam = GetComponent<UnityEngine.UnityEngine.Camera>();
         }
 
         void LateUpdate()

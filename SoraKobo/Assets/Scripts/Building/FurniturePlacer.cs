@@ -13,9 +13,9 @@ namespace SoraKobo.Building
         public GameObject[] furniturePrefabs; // Chair, Piano, Door, Swing, etc.
         public int selectedFurnitureIndex = 0;
 
-        private Camera _cam;
+        private UnityEngine.Camera _cam;
 
-        void Start() => _cam = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+        void Start() => _cam = UnityEngine.UnityEngine.Camera.main;
 
         public void PlaceFurnitureAt(Vector2 screenPos)
         {

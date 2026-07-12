@@ -12,8 +12,8 @@ namespace SoraKobo.MapEditor
     {
         public static MapEditorController Instance { get; private set; }
 
-        [Header("Camera")]
-        public Camera editorCamera;
+        [Header("UnityEngine.Camera")]
+        public UnityEngine.Camera editorCamera;
         public float panSpeed = 10f;
         public float zoomSpeed = 3f;
         public float minZoom = 2f;

@@ -6,11 +6,11 @@ namespace SoraKobo.Player
     public class PlayerNameTag : MonoBehaviour
     {
         public TextMeshPro nameText;
-        private Camera _mainCam;
+        private UnityEngine.Camera _mainCam;
 
         void Start()
         {
-            _mainCam = UnityEngine.UnityEngine.UnityEngine.UnityEngine.Camera.main;
+            _mainCam = UnityEngine.UnityEngine.Camera.main;
         }
 
         void LateUpdate()
