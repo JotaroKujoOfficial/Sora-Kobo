@@ -10,7 +10,7 @@ namespace SoraKobo.Player
 
         void Start()
         {
-            _mainCam = UnityEngine.Camera.main;
+            _mainCam = UnityEngine.UnityEngine.Camera.main;
         }
 
         void LateUpdate()
