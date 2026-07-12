@@ -7,7 +7,7 @@ namespace SoraKobo.UI
     /// regardless of screen resolution or aspect ratio.
     /// Attach to the Main UnityEngine.UnityEngine.Camera.
     /// </summary>
-    [RequireComponent(typeof(UnityEngine.UnityEngine.Camera))]
+    [RequireComponent(typeof(UnityEngine.Camera))]
     public class ResolutionAdapter : MonoBehaviour
     {
         [Header("Reference Resolution")]
@@ -17,7 +17,7 @@ namespace SoraKobo.UI
         [Header("Safe Area")]
         public RectTransform safeAreaPanel;
 
-        private UnityEngine.UnityEngine.Camera _cam;
+        private UnityEngine.Camera _cam;
         private Rect _lastSafeArea = Rect.zero;
         private int _lastScreenWidth;
         private int _lastScreenHeight;
